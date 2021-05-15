@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500&display=swap");
+
+:root {
+  --color-primary: #1f2041;
+  --color-secondary: #4b3f72;
+  --color-tertiary: #e07be0;
+  --color-quarterary: #f0bcd4;
+  --color-quintenary: #e4e4f0;
+  --color-whitish: #f1f7ed;
+  --color-blackish: #050609;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(
+      43deg,
+      var(--color-quarterary) 0%,
+      var(--color-tertiary) 80%
+    )
+    no-repeat top center/cover;
+  color: var(--color-quintenary);
+  font-family: "Noto Sans KR", Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+/* @heading */
+h1,
+h2 {
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 7.5rem;
+}
+
+/* @main */
+#main {
+  position: relative;
+  height: 100vh;
+}
+
+/* @section introduction */
+#main .main-introduction {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  transition: opacity 1s ease-in-out;
+}
+
+#main .main-introduction .intro-contents {
+  text-align: center;
+}
+
+#main .main-introduction .intro-contents > *:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+#main .main-introduction .intro-contents .intro-heading {
+  display: block;
+  background-color: var(--color-secondary);
+  padding: 0.1em 0.2em;
+}
+
+#main .main-introduction .intro-contents .intro-desc {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+}
+
+/* @javascript class */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
