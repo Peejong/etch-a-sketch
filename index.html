@@ -8,6 +8,7 @@
   <meta name="keywords" content="">
   <meta name="author" content="Peejong">  
   <title>Etch-a-Sketch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
   <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <main id="main">
@@ -20,7 +21,26 @@
 
   <section class="main-workspace hidden">
     <div class="tool-panel">
-
+      <div class="button-group">
+        <button class="button"><span class="material-icons">grid_view</span></button>
+        <span class="tooltip">Adjust grid</span>
+        <div class="slider-container hidden">
+          <input type="range" class="tool-grid" min="16" max="500" value="16">
+          <p class="range-size"></p>
+        </div>
+      </div>
+      <div class="button-group">
+        <input class="tool-colorpicker" type="color" value="#050609">
+        <span class="tooltip">Color</span>
+      </div>
+      <div class="button-group">
+        <button class="tool-eraser button"><span class="material-icons">format_color_reset</span></button>
+        <span class="tooltip">Eraser</span>
+      </div>
+      <div class="button-group">
+        <button class="tool-reset button"><span class="material-icons">restart_alt</span></button>
+        <span class="tooltip">Reset</span>
+      </div>
     </div>
     <div class="sketch"></div>
   </section>
