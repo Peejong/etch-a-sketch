@@ -8,4 +8,4 @@ This project implements mechanical drawing toy "etch-a-sketch". The user can dra
 
 [Live demo](https://peejong.github.io/etch-a-sketch/)
 
-Might comeback for improving the design and functionality
+>Might comeback for improving the design and functionality
